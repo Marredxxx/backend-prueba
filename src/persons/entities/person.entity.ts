@@ -5,8 +5,11 @@ export class Person{
     @PrimaryGeneratedColumn()
     id_person:number;
 
-    @Column()
+    @Column({nullable: false})
     name: string;
+
+    @Column()
+    email: string;
 
     @Column()
     age: number; 
